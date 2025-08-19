@@ -105,7 +105,7 @@ const FeaturedProducts = () => {
                       className="bg-gradient-luxury text-primary-foreground hover:shadow-glow transition-all duration-300"
                       onClick={() => {
                         const message = `Hello RAM Kishan's Perfume,\n\nI'm interested in ordering:\n\n🌸 *${product.name}*\nPrice: ${product.price}\nCategory: ${product.category}\n\nDescription: ${product.description}\n\nPlease let me know the availability and ordering process.\n\nThank you!`;
-                        const whatsappUrl = `https://wa.me/919513270508?text=${encodeURIComponent(message)}`;
+                        const whatsappUrl = `https://wa.me/8668435425?text=${encodeURIComponent(message)}`;
                         window.open(whatsappUrl, '_blank');
                       }}
                     >

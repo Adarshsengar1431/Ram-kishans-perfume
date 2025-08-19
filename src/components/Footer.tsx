@@ -39,48 +39,9 @@ const Footer = () => {
                 variant="outline" 
                 className="border-border hover:bg-primary/10 hover:border-primary transition-all duration-300"
               >
-                <Twitter className="h-5 w-5" />
-              </Button>
-              <Button 
-                size="sm" 
-                variant="outline" 
-                className="border-border hover:bg-primary/10 hover:border-primary transition-all duration-300"
-              >
                 <Mail className="h-5 w-5" />
               </Button>
             </div>
-          </div>
-
-          {/* Collections */}
-          <div>
-            <h5 className="text-lg font-semibold text-foreground mb-6">Collections</h5>
-            <ul className="space-y-4">
-              <li>
-                <Link to="/collections" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Premium Collection
-                </Link>
-              </li>
-              <li>
-                <Link to="/collections" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Classic Fragrances
-                </Link>
-              </li>
-              <li>
-                <Link to="/collections" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Floral Series
-                </Link>
-              </li>
-              <li>
-                <Link to="/collections" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Woody Collection
-                </Link>
-              </li>
-              <li>
-                <Link to="/collections" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Oriental Blends
-                </Link>
-              </li>
-            </ul>
           </div>
 
           {/* Customer Care */}
@@ -90,26 +51,6 @@ const Footer = () => {
               <li>
                 <Link to="/customer-care" className="text-muted-foreground hover:text-primary transition-colors duration-300">
                   Contact Support
-                </Link>
-              </li>
-              <li>
-                <Link to="/customer-care" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Order Assistance
-                </Link>
-              </li>
-              <li>
-                <Link to="/customer-care" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Product Guidance
-                </Link>
-              </li>
-              <li>
-                <Link to="/customer-care" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Return Policy
-                </Link>
-              </li>
-              <li>
-                <Link to="/customer-care" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  FAQ
                 </Link>
               </li>
             </ul>
@@ -122,7 +63,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm text-muted-foreground">
-            © 2024 RAM Kishan's Perfume. All rights reserved.
+            © 2025 RAM Kishan's Perfume. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">

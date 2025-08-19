@@ -94,7 +94,7 @@ const About = () => {
           </div>
           <div className="p-6">
             <div className="text-4xl md:text-5xl font-serif font-bold bg-gradient-luxury bg-clip-text text-transparent mb-2">
-              5000+
+              500+
             </div>
             <div className="text-muted-foreground font-medium">Satisfied Customers</div>
           </div>

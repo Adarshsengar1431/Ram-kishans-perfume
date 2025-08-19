@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Instagram, Facebook, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin,} from "lucide-react";
 
 const Contact = () => {
   return (
@@ -121,7 +121,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-foreground">Call Us</h4>
-                    <p className="text-muted-foreground">+91 98765 43210</p>
+                    <p className="text-muted-foreground">+91 86684 35425</p>
                   </div>
                 </div>
               </CardContent>
@@ -136,45 +136,17 @@ const Contact = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-foreground">Visit Us</h4>
                     <p className="text-muted-foreground">
-                      Shop No. 45, Khan Market<br />
-                      New Delhi, 110003
+                      Latur<br />
+                      Maharashtra 413531
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
-
-            {/* Social Links */}
-            <div className="text-center">
-              <h4 className="text-lg font-semibold text-foreground mb-4">Follow Us</h4>
-              <div className="flex justify-center space-x-4">
-                <Button 
-                  size="sm" 
-                  variant="outline" 
-                  className="border-border hover:bg-primary/10 hover:border-primary transition-all duration-300"
-                >
-                  <Instagram className="h-5 w-5" />
-                </Button>
-                <Button 
-                  size="sm" 
-                  variant="outline" 
-                  className="border-border hover:bg-primary/10 hover:border-primary transition-all duration-300"
-                >
-                  <Facebook className="h-5 w-5" />
-                </Button>
-                <Button 
-                  size="sm" 
-                  variant="outline" 
-                  className="border-border hover:bg-primary/10 hover:border-primary transition-all duration-300"
-                >
-                  <Twitter className="h-5 w-5" />
-                </Button>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </div>
+            </div>
+            </section>
   );
 };
 

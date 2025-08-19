@@ -50,7 +50,7 @@ const CustomerCare = () => {
                   Speak directly with our fragrance experts
                 </p>
                 <div className="space-y-2">
-                  <p className="font-semibold text-foreground">+91 98765 43210</p>
+                  <p className="font-semibold text-foreground">+91 86684 35425</p>
                   <p className="text-sm text-muted-foreground">Mon-Sat: 10 AM - 8 PM</p>
                 </div>
                 <Button className="mt-4 bg-gradient-luxury text-primary-foreground">
@@ -69,7 +69,7 @@ const CustomerCare = () => {
                   Quick responses on WhatsApp
                 </p>
                 <div className="space-y-2">
-                  <p className="font-semibold text-foreground">+91 98765 43210</p>
+                  <p className="font-semibold text-foreground">+91 86684 35425</p>
                   <p className="text-sm text-muted-foreground">Available 24/7</p>
                 </div>
                 <Button className="mt-4 bg-gradient-luxury text-primary-foreground">

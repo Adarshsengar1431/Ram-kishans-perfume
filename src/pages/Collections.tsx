@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import collectionImage from "@/assets/perfume-collection.jpg";
+import new1 from "../assets/new.jpg";
 
 const Collections = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -26,7 +27,7 @@ const Collections = () => {
       reviews: 127,
       category: "Premium",
       isNew: true,
-      image: "src/assets/new.jpg"
+      image: new1,
     },
     {
       id: 2,
@@ -38,6 +39,7 @@ const Collections = () => {
       reviews: 89,
       category: "Classic",
       isNew: false,
+      image: "src/assets/new.jpg"
     },
     {
       id: 3,

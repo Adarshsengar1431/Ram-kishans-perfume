@@ -26,6 +26,7 @@ const Collections = () => {
       reviews: 127,
       category: "Premium",
       isNew: true,
+      image: "src/assets/new.jpg"
     },
     {
       id: 2,
@@ -48,6 +49,7 @@ const Collections = () => {
       reviews: 156,
       category: "Floral",
       isNew: true,
+      image: "src/assets/new.jpg"
     },
     {
       id: 4,
@@ -59,6 +61,7 @@ const Collections = () => {
       reviews: 92,
       category: "Floral",
       isNew: false,
+      image: "src/assets/new.jpg"
     },
     {
       id: 5,
@@ -70,6 +73,7 @@ const Collections = () => {
       reviews: 74,
       category: "Oriental",
       isNew: false,
+      image: "src/assets/new.jpg"
     },
     {
       id: 6,
@@ -81,6 +85,7 @@ const Collections = () => {
       reviews: 103,
       category: "Woody",
       isNew: true,
+      image: "src/assets/new.jpg"
     },
     {
       id: 7,
@@ -92,6 +97,7 @@ const Collections = () => {
       reviews: 145,
       category: "Premium",
       isNew: false,
+      image: "src/assets/new.jpg"
     },
     {
       id: 8,
@@ -103,6 +109,7 @@ const Collections = () => {
       reviews: 68,
       category: "Classic",
       isNew: false,
+      image: "src/assets/new.jpg"
     },
   ];
 
@@ -176,7 +183,7 @@ const Collections = () => {
                   {/* Product Image */}
                   <div className="relative overflow-hidden rounded-t-lg aspect-square">
                     <img 
-                      src={collectionImage} 
+                      src={product.image || collectionImage} // Fallback to collectionImage if product image is not available
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
@@ -231,30 +238,30 @@ const Collections = () => {
                         </span>
                       </div>
                     </div>
-
-                     {/* Size Selector */}
-                     <div className="flex gap-2 mb-4">
-                      {sizes.map((size) => (
-                        <Button
-                          key={size}
-                          size="sm"
-                          variant={
-                            selectedSizes[product.id] === size ? "default" : "outline"
-                          }
-                          onClick={() =>
-                            setSelectedSizes((prev) => ({ ...prev, [product.id]: size }))
-                          }
-                          className="rounded-full"
-                        >
-                          {size}
-                        </Button>
-                      ))}
-                    </div>
+                    
+{/* Size Selection */}
+<div className="flex gap-2 mb-4">
+  {["50ml", "100ml", "200ml"].map((size) => (
+    <Button
+      key={size}
+      variant={selectedSizes[product.id] === size ? "default" : "outline"}
+      className="px-3 py-1 text-sm"
+      onClick={() =>
+        setSelectedSizes((prev) => ({
+          ...prev,
+          [product.id]: size,
+        }))
+      }
+    >
+      {size}
+    </Button>
+  ))}
+</div>
 
                     <Button 
                       onClick={() => {
-                        const chosenSize = selectedSizes[product.id] || "100ml"; // default if none selected
-                        const message = `Hello Ram Kishan Perfume's,\n\nI'm interested in ordering:\n\n🌸 *${product.name}*\nPrice: ${product.price}\nOriginal Price: ${product.originalPrice}\nCategory: ${product.category}\nRating: ${product.rating}⭐ (${product.reviews} reviews)\n\nDescription: ${product.description}\n\nPlease let me know the availability and ordering process.\n\nThank you!`;
+                      
+                        const message = `Hello Ram Kishan Perfume's,\n\nI'm interested in ordering:\n\n🌸 *${product.name}*\nPrice: ${product.price}\nOriginal Price: ${product.originalPrice}\nSize: ${selectedSizes[product.id] || "100ml"}\nCategory: ${product.category}\nRating: ${product.rating}⭐ (${product.reviews} reviews)\n\nDescription: ${product.description}\n\nPlease let me know the availability and ordering process.\n\nThank you!`;
                         const whatsappUrl = `https://wa.me/8668435425?text=${encodeURIComponent(message)}`;
                         window.open(whatsappUrl, '_blank');
                       }}

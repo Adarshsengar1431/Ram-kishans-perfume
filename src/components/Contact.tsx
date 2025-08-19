@@ -135,9 +135,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-foreground">Visit Us</h4>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground ">
                       Latur<br />
-                      Maharashtra 413531
+                      Maharashtra 413531<br />
+                      <br />
+                      Kalaburagi<br />
+                      Karnataka 413531
                     </p>
                   </div>
                 </div>

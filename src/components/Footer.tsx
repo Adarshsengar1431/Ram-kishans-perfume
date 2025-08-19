@@ -65,17 +65,6 @@ const Footer = () => {
           <div className="text-sm text-muted-foreground">
             © 2025 Ram Kishan Perfume's. All rights reserved.
           </div>
-          <div className="flex space-x-6 text-sm">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-              Terms of Service
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-              Cookie Policy
-            </a>
-          </div>
         </div>
       </div>
     </footer>

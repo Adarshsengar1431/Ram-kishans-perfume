@@ -9,8 +9,11 @@ import collectionImage from "@/assets/perfume-collection.jpg";
 
 const Collections = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedSizes, setSelectedSizes] = useState({}); // Track size for each product
+
 
   const categories = ["All", "Premium", "Classic", "Floral", "Woody", "Oriental"];
+  const sizes = ["50ml", "100ml", "150ml"];
 
   const products = [
     {
@@ -229,8 +232,28 @@ const Collections = () => {
                       </div>
                     </div>
 
+                     {/* Size Selector */}
+                     <div className="flex gap-2 mb-4">
+                      {sizes.map((size) => (
+                        <Button
+                          key={size}
+                          size="sm"
+                          variant={
+                            selectedSizes[product.id] === size ? "default" : "outline"
+                          }
+                          onClick={() =>
+                            setSelectedSizes((prev) => ({ ...prev, [product.id]: size }))
+                          }
+                          className="rounded-full"
+                        >
+                          {size}
+                        </Button>
+                      ))}
+                    </div>
+
                     <Button 
                       onClick={() => {
+                        const chosenSize = selectedSizes[product.id] || "100ml"; // default if none selected
                         const message = `Hello Ram Kishan Perfume's,\n\nI'm interested in ordering:\n\n🌸 *${product.name}*\nPrice: ${product.price}\nOriginal Price: ${product.originalPrice}\nCategory: ${product.category}\nRating: ${product.rating}⭐ (${product.reviews} reviews)\n\nDescription: ${product.description}\n\nPlease let me know the availability and ordering process.\n\nThank you!`;
                         const whatsappUrl = `https://wa.me/8668435425?text=${encodeURIComponent(message)}`;
                         window.open(whatsappUrl, '_blank');

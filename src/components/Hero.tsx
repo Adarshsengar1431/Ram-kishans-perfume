@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight">
             <span className="bg-gradient-luxury bg-clip-text text-transparent">
-              RAM Kishan's Perfume
+            Ram Kishan Perfume's
             </span>
           </h1>
           

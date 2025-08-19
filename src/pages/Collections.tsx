@@ -231,7 +231,7 @@ const Collections = () => {
 
                     <Button 
                       onClick={() => {
-                        const message = `Hello RAM Kishan's Perfume,\n\nI'm interested in ordering:\n\n🌸 *${product.name}*\nPrice: ${product.price}\nOriginal Price: ${product.originalPrice}\nCategory: ${product.category}\nRating: ${product.rating}⭐ (${product.reviews} reviews)\n\nDescription: ${product.description}\n\nPlease let me know the availability and ordering process.\n\nThank you!`;
+                        const message = `Hello Ram Kishan Perfume's,\n\nI'm interested in ordering:\n\n🌸 *${product.name}*\nPrice: ${product.price}\nOriginal Price: ${product.originalPrice}\nCategory: ${product.category}\nRating: ${product.rating}⭐ (${product.reviews} reviews)\n\nDescription: ${product.description}\n\nPlease let me know the availability and ordering process.\n\nThank you!`;
                         const whatsappUrl = `https://wa.me/8668435425?text=${encodeURIComponent(message)}`;
                         window.open(whatsappUrl, '_blank');
                       }}

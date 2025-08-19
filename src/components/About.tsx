@@ -33,7 +33,7 @@ const About = () => {
           <div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
               <span className="text-foreground">About</span>{" "}
-              <span className="bg-gradient-luxury bg-clip-text text-transparent">RAM Kishan's Perfume</span>
+              <span className="bg-gradient-luxury bg-clip-text text-transparent">Ram Kishan Perfume's</span>
             </h2>
             
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">

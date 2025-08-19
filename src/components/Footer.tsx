@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <h4 className="text-2xl font-serif font-bold bg-gradient-luxury bg-clip-text text-transparent mb-4">
-              RAM Kishan's Perfume
+            Ram Kishan Perfume's
             </h4>
             <p className="text-muted-foreground mb-6 leading-relaxed max-w-md">
               Your trusted partner for premium fragrances in India. We provide personalized 
@@ -63,7 +63,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm text-muted-foreground">
-            © 2025 RAM Kishan's Perfume. All rights reserved.
+            © 2025 Ram Kishan Perfume's. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">

@@ -15,7 +15,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-serif font-bold bg-gradient-luxury bg-clip-text text-transparent">
-              RAM Kishan's Perfume
+            Ram Kishan Perfume's
             </h1>
           </div>
 
